@@ -9,7 +9,10 @@ This project is a template for installing and running [WordPress](http://wordpre
 
 ## Installation
 
+Note: This repository is set up to deploy in a local environment using sqlite. The gh-pages version only works with php 7.0.x.
+
 1. Fork [the repository](https://github.com/rhildred/wordpress-heroku) to your own github
+1. Add any plugins and themes you need and test
 1. Create a new php app on on [Heroku](http://www.heroku.com/).
 1. Add a heroku postgres database to your app
 1. Deploy to Heroku from github
@@ -40,7 +43,7 @@ bin/
 *.zip
 ```
 
-## Wiki
+## Wiki (These are links to mhoofman's wiki)
 
 * [Custom Domains](https://github.com/mhoofman/wordpress-heroku/wiki/Custom-Domains)
 * [Media Uploads](https://github.com/mhoofman/wordpress-heroku/wiki/Media-Uploads)
