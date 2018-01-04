@@ -7,6 +7,31 @@ This project is a template for installing and running [WordPress](http://wordpre
 * [Disqus Commenting System](https://disqus.com/)
 * [Wordpress HTTPS](https://wordpress.org/plugins/wordpress-https/)
 
+## Development Environment
+
+More to come. Needed to add this to settings.
+
+```
+
+{
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": ["-l"]
+}
+
+```
+
+This to bottom of profile
+
+```
+
+PATH="${PATH}:/c/Program Files/php7.0.27/"
+export PATH
+
+```
+
+Also installed php there, git and visual studio code.
+
 ## Installation
 
 Note: This repository is set up to deploy in a local environment using sqlite. The gh-pages version only works with php 7.0.x.
