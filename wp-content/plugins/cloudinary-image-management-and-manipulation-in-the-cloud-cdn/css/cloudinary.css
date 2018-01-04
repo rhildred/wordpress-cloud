@@ -3,7 +3,7 @@
   line-height: 19px;
   font-weight: bold;
   margin-top: 10px;
-  margin-left: 0px;
+  margin-left: 0px;  
   padding: 5px;
 }
 
@@ -36,13 +36,16 @@
 }
 
 .wp-media-buttons a.cloudinary_add_media {
-	margin-left: 30px;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 14px;
 	color: #1f416d;
-	background: url("../images/edit_icon.png") no-repeat scroll 0 -2px transparent;
-	padding-left: 27px;
-	padding-top: 2px;
+	background: url("../images/edit_icon.png") no-repeat scroll 4px 2px #fff;
+	padding: 6px 6px 6px 30px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	display: inline-block;
 }
 
 .wp-media-buttons span.cloudinary_message {
@@ -60,7 +63,7 @@
 	padding: 9px 15px 4px 0;
 	line-height: 29px;
 	font-weight: normal;
-	text-shadow: #fff 0 1px 0;
+	text-shadow: #fff 0 1px 0;	
 }
 
 .cloudinary_settings .acc_link {
@@ -81,7 +84,7 @@
 .cloudinary_settings .logo {
 	background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
 	float: right;
-	height: 51px;
+	height: 55px;
 	margin: 10px 20px 0 10px;
 	overflow: hidden;
 	text-indent: -9999px;
@@ -98,21 +101,21 @@
 	font-size: 16px;
 	font-weight: bold;
 	vertical-align: top;
-	padding-top: 10px;
+	padding-top: 10px;	
 }
 .cloudinary_settings .cloudinary_config_second_td {
 	float: left;
-	width: 450px;
+	width: 450px;	
 }
 .cloudinary_settings .cloudinary_config_second_td textarea {
 	border-color: #bbb;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;            	
 	border-style: solid;
 	border-width: 1px;
 	float: left;
-	width: 400px;
+	width: 400px;	
 	font-size: 16px;
 	color: #666;
 	line-height: 20px;
@@ -121,10 +124,17 @@
 	overflow: hidden;
 	max-height: 72px;
 	max-width: 400px;
-	resize: none;
+	resize: none;	
 }
 .cloudinary_settings .cloudinary_config_second_td span {
 	float: left;
 	margin-top: 3px;
 	margin-left: 5px;
 }
+
+@media screen and (max-width: 782px) {
+	#wp-content-media-buttons a {
+		padding: 6px 6px 6px 30px;
+	}
+}
+

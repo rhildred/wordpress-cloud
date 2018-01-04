@@ -9,7 +9,10 @@ This project is a template for installing and running [WordPress](http://wordpre
 
 ## Installation
 
+Note: This repository is set up to deploy in a local environment using sqlite. The gh-pages version only works with php 7.0.x.
+
 1. Fork [the repository](https://github.com/rhildred/wordpress-heroku) to your own github
+1. Add any plugins and themes you need and test
 1. Create a new php app on on [Heroku](http://www.heroku.com/).
 1. Add a heroku postgres database to your app
 1. Deploy to Heroku from github
@@ -23,23 +26,9 @@ Multimedia can also not be stored there for the same reasons. You will need to a
 
 ## Updating
 
-Updating your WordPress version is just a matter of merging the updates into
-the branch created from the installation.
+Updating is pretty much guaranteed to fail. The postgres database connection won't survive the update. I have tried at various times to fix this and failed. You can see what I have tried on the master branch of this repository. There is definitely some security risk to using this. Only you can decide whether demonstrating your work for free is worth the risk of using outdated software.
 
-    $ git pull # Get the latest
-
-Using the same branch name from our installation:
-
-    $ git checkout production
-    $ git merge master # Merge latest
-    $ git push heroku production:master
-
-WordPress needs to update the database. After push, navigate to:
-
-    http://your-app-url.herokuapp.com/wp-admin
-
-WordPress will prompt for updating the database. After that you'll be good
-to go.
+Because this can't be updated to newer versions of wordpress newer plugins and themes may also refuse to run. So far this seems to be more of a problem for plugins than themes.
 
 ## Deployment optimisation
 
@@ -54,7 +43,7 @@ bin/
 *.zip
 ```
 
-## Wiki
+## Wiki (These are links to mhoofman's wiki)
 
 * [Custom Domains](https://github.com/mhoofman/wordpress-heroku/wiki/Custom-Domains)
 * [Media Uploads](https://github.com/mhoofman/wordpress-heroku/wiki/Media-Uploads)

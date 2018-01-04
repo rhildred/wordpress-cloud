@@ -19,7 +19,7 @@ class Cloudinary {
     public static function reset_config() {
         self::config_from_url(getenv("CLOUDINARY_URL"));
     }
-
+    
     public static function config_from_url($cloudinary_url) {
         self::$config = array();
         if ($cloudinary_url) {
@@ -137,17 +137,17 @@ class Cloudinary {
         array_push($base_transformations, $transformation);
         return implode("/", array_filter($base_transformations));
     }
-
+  
     private static function join_pair_underscore($key, $value) {
-        return $key . "_" . $value;
+        return $key . "_" . $value; 
     }
 
     private static function join_pair_equal($key, $value) {
-        return $key . "=" . $value;
+        return $key . "=" . $value; 
     }
 
     private static function join_pair_equal_quoted($key, $value) {
-        return $key . "='" . $value . "'";
+        return $key . "='" . $value . "'"; 
     }
 
     // Warning: $options are being destructively updated!

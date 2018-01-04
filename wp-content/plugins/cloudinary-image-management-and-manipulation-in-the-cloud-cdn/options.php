@@ -92,8 +92,8 @@ function HandlePlaceholder(oTextbox) {
 	          </td>
 	        </tr>
 	        <tr>
-	          <td>&nbsp;</td>
-	          <td><p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Settings') ?>" /><span class="submit_progress" style="display:none;">Updating...</span></p></td>
+            <td>&nbsp;</td>
+            <td><p class="submit"><input type="submit" name="Submit" value="<?php _e('Update Settings') ?>" /><span class="submit_progress" style="display:none;">Updating...</span></p></td>
 	        </tr>
 	      </table>
 	    </form>
