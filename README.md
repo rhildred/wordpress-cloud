@@ -31,6 +31,7 @@ Development environment dependencies:
 #### PHP Installation
 
 1) Download php from [php for windows downloads](http://windows.php.net/download)
+
 2) Select this version for maximum compatibility
 
 ![7.0.x](https://rhildred.github.io/wordpress-heroku/READMEImages/phpdownloads64bitThreadsafe.PNG "7.0.x")
