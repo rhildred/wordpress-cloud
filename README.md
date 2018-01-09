@@ -21,17 +21,24 @@ Development environment dependencies:
 
 1. Download git from [git downloads](https://git-scm.com/downloads]).
 2. Install with the following options:
+
 ![Editor](https://rhildred.github.io/wordpress-heroku/READMEImages/giteditor.PNG "Editor")
+
 ![Path](https://rhildred.github.io/wordpress-heroku/READMEImages/UseGitAndOptions.PNG "Path")
+
 ![Line Endings](https://rhildred.github.io/wordpress-heroku/READMEImages/LineEnds.PNG "Line Endings")
 
 #### PHP Installation
 
-1. Download php from [php for windows downloads](http://windows.php.net/download)
-2. Select this version for maximum compatibility
+1) Download php from [php for windows downloads](http://windows.php.net/download)
+2) Select this version for maximum compatibility
+
 ![7.0.x](https://rhildred.github.io/wordpress-heroku/READMEImages/phpdownloads64bitThreadsafe.PNG "7.0.x")
+
 ![extract all](https://rhildred.github.io/wordpress-heroku/READMEImages/phpExtract.PNG "extract all")
-3. Unzip to `C:\Program Files\php7.0.27`
+
+3) Unzip to `C:\Program Files\php7.0.27`
+
 ![Unzip to]( https://rhildred.github.io/wordpress-heroku/READMEImages/clickbeside.PNG "Unzip to")
 
 #### Visual Studio Code Installation
@@ -42,8 +49,11 @@ Development environment dependencies:
 #### Post Installation
 
 1) Start Visual Studio Code in administrator mode
+
 ![Administrator](https://rhildred.github.io/wordpress-heroku/READMEImages/vscodeAdministrator.PNG "Administrator")
+
 2) Needed to add this to settings for vscode.
+
 ![Settings](https://rhildred.github.io/wordpress-heroku/READMEImages/VsCodeSettings.PNG "Settings")
 ```
 
@@ -55,17 +65,24 @@ Development environment dependencies:
 
 ```
 3) This to bottom of profile
+
 ![](https://rhildred.github.io/wordpress-heroku/READMEImages/profile.PNG)
+
 ```
 
 PATH="${PATH}:/c/Program Files/php7.0.27/"
 export PATH
 
 ```
+
 4) Open php.ini.develoment
+
 ![Unzip to]( https://rhildred.github.io/wordpress-heroku/READMEImages/clickbeside.PNG "Unzip to")
+
 5) Save as php.ini (On windows 10 you will get an error if you didn't open vscode as administrator)
+
 6) Make the following changes
+
 ![extension_dir]( https://rhildred.github.io/wordpress-heroku/READMEImages/extension_dir.PNG "extension_dir")
 
 ![extensions]( https://rhildred.github.io/wordpress-heroku/READMEImages/extensions.PNG "Extensions")
@@ -86,16 +103,20 @@ Installation on Mac is a lot simpler.
 
 #### Git/Vscode
 
-Download both of these accepting the default prompts.
+Download both of these and install accepting the default prompts.
 
 #### PHP
 
-1. Once you have VsCode installed use the following technique to enter a shell in vscode:
+1) Once you have VsCode installed use the following technique to enter a shell in vscode:
+
 ![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
-2. Install php using the curl command:
+
+2) Install php using the curl command:
+
 ```
 curl -s https://php-osx.liip.ch/install.sh | bash -s 7.0
 ```
+
 With the resulting bash shell you should type in `php --version` and see the following results.
 
 ![php version]( https://rhildred.github.io/wordpress-heroku/READMEImages/phpversion.PNG "php version")
@@ -110,17 +131,26 @@ If you just want to use wordpress-heroku in your own development environment for
 
 To run Wordpress:
 
-1. Open the unzipped folder (you should rename it to something more meaningful than wordpress-heroku-master)
+1) Open the unzipped folder (you should rename it to something more meaningful than wordpress-heroku-master)
+
 ![open folder]( https://rhildred.github.io/wordpress-heroku/READMEImages/openfolder.PNG "open folder")
-2. Use the keypress technique to start a bash shell
+
+2) Use the keypress technique to start a bash shell
+
 ![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
-3. Type `php -S localhost:8000` in the shell
-4. go to [http://localhost:8000](http://localhost:8000) in a new browser tab.
+
+3) Type `php -S localhost:8000` in the shell
+
+4) go to [http://localhost:8000](http://localhost:8000) in a new browser tab.
+
 ![language selection]( https://rhildred.github.io/wordpress-heroku/READMEImages/language.PNG "language selection")
-5. enter a username and lab password on the next screen
+
+5) enter a username and lab password on the next screen
+
 ![Lab password]( https://rhildred.github.io/wordpress-heroku/READMEImages/LabPassword.PNG "lab password")
 
 When you are really done you should be able to log in with your username and password from the previous step and see this:
+
 ![True success]( https://rhildred.github.io/wordpress-heroku/READMEImages/TrueSuccess.PNG "lab True success")
 
 ## Heroku Installation
