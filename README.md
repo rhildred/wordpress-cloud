@@ -11,9 +11,9 @@ This project is a template for installing and running [WordPress](http://wordpre
 
 Development environment dependencies:
 
-*[Git](https://git-scm.com/)
-*[Php](http://www.php.net/)
-*[Visual Studio Code IDE](https://code.visualstudio.com/)
+* [Git](https://git-scm.com/)
+* [Php](http://www.php.net/)
+* [Visual Studio Code IDE](https://code.visualstudio.com/)
 
 ### Windows
 
