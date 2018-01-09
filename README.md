@@ -159,6 +159,8 @@ When you are really done you should be able to log in with your username and pas
 Note: This repository is set up to deploy in a local environment using sqlite. The WP4.1.1 version only works with php 7.0.x.
 
 1. Fork [the repository](https://github.com/rhildred/wordpress-heroku) to your own github
+2. Clone the repository and open the resulting folder in VsCode
+3. Run `git checkout WP4.1.1` if you are using postgresql on heroku
 1. Add any plugins and themes you need and test
 1. Create a new php app on on [Heroku](http://www.heroku.com/).
 1. Add a heroku (postgres is free without a credit card) database to your app
