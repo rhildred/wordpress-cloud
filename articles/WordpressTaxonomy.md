@@ -1,0 +1,1 @@
+This will be on the difference between pages and posts. Macdonald's "what can you build with wordpress" is helpful here but it would be also helpful to include more examples possibly of student's sites here.
