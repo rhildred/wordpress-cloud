@@ -201,3 +201,7 @@ bin/
 * [Setting Up a Local Environment on Linux (Apache)](https://github.com/mhoofman/wordpress-heroku/wiki/Setting-Up-a-Local-Environment-on-Linux-\(Apache\))
 * [Setting Up a Local Environment on Mac OS X](https://github.com/mhoofman/wordpress-heroku/wiki/Setting-Up-a-Local-Environment-on-Mac-OS-X)
 * [More...](https://github.com/mhoofman/wordpress-heroku/wiki)
+
+## Altervista
+
+Probably a better platform then Heroku for deploying student wordpress portfolio sites is [Altervista](https://en.altervista.org/). This is being used by a colleague of mine at Conestoga.
