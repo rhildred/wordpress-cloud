@@ -1,0 +1,28 @@
+{
+    "name": "mar18-project-start",
+    "version": "1.0.0",
+    "description": "wordpress site",
+    "main": "index.php",
+    "scripts": {
+        "start": "pm2 start index.js",
+        "stop": "pm2 stop index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rhildred/wordpress-heroku.git"
+    },
+    "keywords": [
+        "php",
+        "pm2"
+    ],
+    "author": "Rich Hildred",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rhildred/wordpress-heroku/issues"
+    },
+    "homepage": "https://github.com/rhildred/wordpress-heroku#readme",
+    "dependencies": {
+        "pm2": "^3.4.1"
+    }
+}
