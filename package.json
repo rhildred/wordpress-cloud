@@ -5,6 +5,7 @@
     "main": "index.php",
     "scripts": {
         "start": "pm2 start index.js",
+        "log": "pm2 log",
         "stop": "pm2 stop index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
