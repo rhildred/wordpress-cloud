@@ -6,8 +6,7 @@
     "scripts": {
         "start": "pm2 start index.js",
         "log": "pm2 log",
-        "stop": "pm2 stop all",
-        "delete": "pm2 delete all",
+        "stop": "pm2 delete all",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
