@@ -4,9 +4,9 @@
     "description": "wordpress site",
     "main": "index.php",
     "scripts": {
-        "start": "pm2 start index.js",
+        "start": "pm2 start wordpress.js",
         "log": "pm2 log",
-        "stop": "pm2 delete index.js",
+        "stop": "pm2 delete wordpress.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
