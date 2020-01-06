@@ -16,6 +16,14 @@ function economics_customize_register( $wp_customize ) {
 		// Boolean check.
 		return ( ( isset( $checked ) && true == $checked ) ? true : false );
 	}
+	
+	function economics_sanitize_dropdown_pages( $page_id, $setting ) {
+	  // Ensure $input is an absolute integer.
+	  $page_id = absint( $page_id );
+	
+	  // If $page_id is an ID of a published page, return it; otherwise, return the default.
+	  return ( 'publish' == get_post_status( $page_id ) ? $page_id : $setting->default );
+	}
 		
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
@@ -61,7 +69,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('slide-page1',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 	));
 	
 	$wp_customize->add_control('slide-page1',array(
@@ -73,7 +81,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('slide-page2',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 	));
 	
 	$wp_customize->add_control('slide-page2',array(
@@ -85,7 +93,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('slide-page3',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 	));
 	
 	$wp_customize->add_control('slide-page3',array(
@@ -141,7 +149,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('pagelist4',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 		));
  
 	$wp_customize->add_control(	'pagelist4',array(
@@ -152,7 +160,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('pagelist5',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 		));
  
 	$wp_customize->add_control(	'pagelist5',array(
@@ -163,7 +171,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('pagelist6',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 		));
  
 	$wp_customize->add_control(	'pagelist6',array(
@@ -174,7 +182,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('pagelist7',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 		));
  
 	$wp_customize->add_control(	'pagelist7',array(
@@ -206,7 +214,7 @@ function economics_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('aboutuspage',array(
 			'default'	=> '0',			
 			'capability' => 'edit_theme_options',
-			'sanitize_callback'	=> 'absint'
+			'sanitize_callback'	=> 'economics_sanitize_dropdown_pages'
 		));
  
 	$wp_customize->add_control(	'aboutuspage',array(

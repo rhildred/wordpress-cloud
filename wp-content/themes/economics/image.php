@@ -17,14 +17,14 @@ get_header(); ?>
                         <div class="entry-meta">
                             <?php
                                 $metadata = wp_get_attachment_metadata();
-                                printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s">%4$s &times; %5$s</a> in <a href="%6$s" rel="gallery">%7$s</a>', 'economics' ),
+                                 printf( wp_kses( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s">%4$s &times; %5$s</a> in <a href="%6$s" rel="gallery">%7$s</a>', 'economics' ),
                                     esc_attr( get_the_date( 'c' ) ),
                                     esc_html( get_the_date() ),
                                     esc_url( wp_get_attachment_url() ),
-                                    $metadata['width'],
-                                    $metadata['height'],
+                                    esc_attr($metadata['width']),
+                                    esc_attr($metadata['height']),
                                     esc_url( get_permalink( $post->post_parent ) ),
-                                    get_the_title( $post->post_parent )
+                                    esc_html( get_the_title( $post->post_parent ) )
                                 );
     
                                 edit_post_link( __( 'Edit', 'economics' ), '<span class="edit-link">', '</span>' );

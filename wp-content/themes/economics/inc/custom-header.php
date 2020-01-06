@@ -36,6 +36,23 @@ function economics_header_style() {
 		}
 	<?php endif; ?>	
 	</style>
-	<?php  
+    <?php
+	// If the header text option is untouched, let's bail.
+	if ( display_header_text() ) {
+		return;
+	}
+
+	// If the header text has been hidden.
+	?>
+    <style type="text/css">		
+		.logo h1,
+		.logo span{
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute;
+		}
+    </style>
+    
+    
+	<?php   
 } 
 endif; // economics_header_style 

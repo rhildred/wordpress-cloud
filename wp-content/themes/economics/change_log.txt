@@ -7,3 +7,6 @@ i) Update the theme.
 Version 1.0.3
 i) Updated the theme and resolved issues as per reviewer comments.
 
+Version 1.0.4
+i) Theme Updated as per WordPress New guideline
+

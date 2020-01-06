@@ -27,11 +27,7 @@ function economics_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support('woocommerce');
 	add_theme_support('html5');
-	add_theme_support( 'post-thumbnails' );
-	add_theme_support( 'custom-header', array( 
-		'default-text-color' => false,
-		'header-text' => false,
-	) );
+	add_theme_support( 'post-thumbnails' );	
 	add_theme_support( 'title-tag' );	
 	add_theme_support( 'custom-logo', array(
 		'height'      => 50,
@@ -120,9 +116,9 @@ function economics_ie_stylesheet(){
 	}
 add_action('wp_enqueue_scripts','economics_ie_stylesheet');
 
-define('economics_THEME_DOC','https://gracethemes.com/documentation/economics/','economics');
-define('economics_PROTHEME_URL','https://gracethemes.com/themes/clean-minimal-wordpress-theme/','economics');
-define('economics_LIVE_DEMO','https://gracethemes.com/demo/economics/','economics');
+define('ECONOMICS_THEME_DOC','https://gracethemes.com/documentation/economics/','economics');
+define('ECONOMICS_PROTHEME_URL','https://gracethemes.com/themes/clean-minimal-wordpress-theme/','economics');
+define('ECONOMICS_LIVE_DEMO','https://gracethemes.com/demo/economics/','economics');
 
 if ( ! function_exists( 'economics_the_custom_logo' ) ) :
 /**

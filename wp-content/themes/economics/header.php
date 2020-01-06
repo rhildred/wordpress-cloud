@@ -12,7 +12,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php endif; ?>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -38,15 +40,18 @@ $inner_cls = 'siteinner';
 
 
 <div class="container">
-     <div class="site-header <?php echo $inner_cls; ?>">      
+     <div class="site-header <?php echo esc_attr($inner_cls); ?>">      
           <div class="logo">
 				<?php economics_the_custom_logo(); ?>
-                <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
-                <span><?php bloginfo('description'); ?></span>
+                 <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                <?php $description = get_bloginfo( 'description', 'display' );
+            if ( $description || is_customize_preview() ) : ?>
+                <span><?php echo esc_html($description); ?></span>
+            <?php endif; ?>
           </div><!-- logo -->
           <div class="head-rightpart">
                <div class="toggle">
-                 <a class="toggleMenu" href="#"><?php _e('Menu','economics'); ?></a>
+                 <a class="toggleMenu" href="#"><?php esc_html_e('Menu','economics'); ?></a>
                </div><!-- toggle --> 
                <div class="header-menu">                   
                 <?php wp_nav_menu( array('theme_location' => 'primary') ); ?>   
@@ -75,9 +80,9 @@ if($show_slider != '') {
         while( $slidequery->have_posts() ) : $slidequery->the_post();
         $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>
         <?php if(!empty($image)){ ?>
-        <img src="<?php echo esc_url( $image ); ?>" title="#slidecaption<?php echo $i; ?>" />
+        <img src="<?php echo esc_url( $image ); ?>" title="#slidecaption<?php echo esc_attr( $i ); ?>" alt="<?php echo esc_attr($alt); ?>" />
         <?php }else{ ?>
-        <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/images/slides/slider-default.jpg" title="#slidecaption<?php echo $i; ?>" />
+        <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/images/slides/slider-default.jpg" title="#slidecaption<?php echo esc_attr( $i ); ?>" alt="<?php echo esc_attr($alt); ?>" />
         <?php } ?>
         <?php $i++; endwhile; ?>
     </div>   
@@ -86,7 +91,7 @@ if($show_slider != '') {
 $j=1;
 $slidequery->rewind_posts();
 while( $slidequery->have_posts() ) : $slidequery->the_post(); ?>                 
-    <div id="slidecaption<?php echo $j; ?>" class="nivo-html-caption">
+    <div id="slidecaption<?php echo esc_attr( $j ); ?>" class="nivo-html-caption">
         <div class="slide_info">
             <h2><?php the_title(); ?></h2>
             <p><?php echo esc_html( wp_trim_words( get_the_content(), 20, '' ) );  ?></p>
@@ -149,7 +154,7 @@ if( $show_whatwedo != ''){ ?>
                                      <h3><?php the_title(); ?></h2>
                                      <p><?php echo esc_html( wp_trim_words( get_the_content(), 125, '&hellip;' ) );  ?></p>   
                                      <a class="learnmore" href="<?php the_permalink(); ?>">                                      
-                                      <?php _e('Read More','economics'); ?>
+                                      <?php esc_html_e('Read More','economics'); ?>
                                     </a>                                                                     
                                     </div>                                    
                                     <?php if(has_post_thumbnail() ) { ?>

@@ -11,10 +11,10 @@ get_header(); ?>
     <div class="pagelayout_area">
         <section class="site-maincontentarea">
             <header class="page-header">
-                <h1 class="entry-title"><?php _e( '404 Not Found', 'economics' ); ?></h1>                
+                <h1 class="entry-title"><?php esc_html_e( '404 Not Found', 'economics' ); ?></h1>                
             </header><!-- .page-header -->
             <div class="page-content">
-                <p><?php _e( 'Looks like you have taken a wrong turn.....<br />Don\'t worry... it happens to the best of us.', 'economics' ); ?></p>               
+                <p><?php esc_html_e( 'Looks like you have taken a wrong turn.....<br />Don\'t worry... it happens to the best of us.', 'economics' ); ?></p>               
             </div><!-- .page-content -->
         </section>
         <?php get_sidebar();?>       

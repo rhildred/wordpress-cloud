@@ -11,10 +11,10 @@
 <div class="footer-copyright">
         	<div class="container">
             	<div class="copyright-txt">
-					<?php bloginfo('name'); ?>. <?php _e('All Rights Reserved', 'economics');?>           
+					<?php bloginfo('name'); ?>. <?php esc_html_e('All Rights Reserved', 'economics');?>           
                 </div>
-                <div class="design-by">
-				  <a href="<?php echo esc_url( __( 'https://gracethemes.com/themes/economics/', 'economics' ) ); ?>"><?php printf( __( 'Theme by %s', 'economics' ), 'Grace Themes' ); ?></a>
+                <div class="design-by">				
+                  <?php esc_html_e('Theme by Grace Themes','economics'); ?>
                 </div>
                  <div class="clear"></div>
             </div>           

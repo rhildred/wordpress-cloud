@@ -4,8 +4,8 @@
 
 Theme Name      :   Economics
 Theme URI       :   https://gracethemes.com/themes/economics/
-Version         :   1.0.3
-Tested up to    :   WP 4.8.2
+Version         :   1.0.4
+Tested up to    :   WP 5.2.2
 Author          :   Grace Themes
 Author URI      :   https://www.gracethemes.com/
 

@@ -25,7 +25,7 @@
         <?php if ( is_search() || !is_single() ) : // Only display Excerpts for Search ?>
         <div class="entry-summary">
            	<?php the_excerpt(); ?>
-            <a class="learnmore" href="<?php the_permalink(); ?>"><?php _e('Read More &raquo;','economics'); ?></a>
+            <a class="learnmore" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More &raquo;','economics'); ?></a>
         </div><!-- .entry-summary -->
         <?php else : ?>
         <div class="entry-content">
