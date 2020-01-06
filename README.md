@@ -1,6 +1,6 @@
 # WordPress Heroku
 
-This project is a template for installing and running [WordPress](http://wordpress.org/) on [Heroku](http://www.heroku.com/). The repository comes bundled with:
+This project is a template for installing and running [WordPress](http://wordpress.org/) on the cloud without a server.[Heroku](http://www.heroku.com/) for instance. The repository comes bundled with:
 * [PostgreSQL for WordPress](http://wordpress.org/extend/plugins/postgresql-for-wordpress/) - only works with WP4.1.1 branch and PHP 7.0.x and 5.x versions
 * [Cloudinary for non ephemeral Image and Video Storage](http://cloudinary.com/)
 * [WP Sendgrid](https://wordpress.org/plugins/wp-sendgrid/)
