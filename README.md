@@ -140,9 +140,13 @@ To run Wordpress:
 
 ![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
 
-3) Type `php -S localhost:8000` in the shell
+3) Type `npm install` followed by `npm start` in the shell. You will need to have node installed for this to work.
 
-4) go to [http://localhost:8000](http://localhost:8000) in a new browser tab.
+    or (if you don't have node installed) 
+    
+4) Type `php -S localhost:8000` in the shell
+
+5) go to [http://localhost:8000](http://localhost:8000) in a new browser tab.
 
 ![language selection]( https://rhildred.github.io/wordpress-heroku/READMEImages/language.PNG "language selection")
 
