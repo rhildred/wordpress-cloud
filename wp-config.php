@@ -75,6 +75,7 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define( 'WP_CONTENT_URL', '/wp-content');
 
 //need this for heroku
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == "https") $_SERVER['HTTPS']="on";
