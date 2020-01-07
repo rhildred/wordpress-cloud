@@ -22,11 +22,11 @@ Development environment dependencies:
 1. Download git from [git downloads](https://git-scm.com/downloads]).
 2. Install with the following options:
 
-![Editor](https://rhildred.github.io/wordpress-heroku/READMEImages/giteditor.PNG "Editor")
+![Editor](https://rhildred.github.io/wordpress-cloud/READMEImages/giteditor.PNG "Editor")
 
-![Path](https://rhildred.github.io/wordpress-heroku/READMEImages/UseGitAndOptions.PNG "Path")
+![Path](https://rhildred.github.io/wordpress-cloud/READMEImages/UseGitAndOptions.PNG "Path")
 
-![Line Endings](https://rhildred.github.io/wordpress-heroku/READMEImages/LineEnds.PNG "Line Endings")
+![Line Endings](https://rhildred.github.io/wordpress-cloud/READMEImages/LineEnds.PNG "Line Endings")
 
 #### PHP Installation
 
@@ -34,13 +34,13 @@ Development environment dependencies:
 
 2) Select this version for maximum compatibility
 
-![7.0.x](https://rhildred.github.io/wordpress-heroku/READMEImages/phpdownloads64bitThreadsafe.PNG "7.0.x")
+![7.0.x](https://rhildred.github.io/wordpress-cloud/READMEImages/phpdownloads64bitThreadsafe.PNG "7.0.x")
 
-![extract all](https://rhildred.github.io/wordpress-heroku/READMEImages/phpExtract.PNG "extract all")
+![extract all](https://rhildred.github.io/wordpress-cloud/READMEImages/phpExtract.PNG "extract all")
 
 3) Unzip to `C:\Program Files\php7.0.27`
 
-![Unzip to]( https://rhildred.github.io/wordpress-heroku/READMEImages/clickbeside.PNG "Unzip to")
+![Unzip to]( https://rhildred.github.io/wordpress-cloud/READMEImages/clickbeside.PNG "Unzip to")
 
 #### Visual Studio Code Installation
 
@@ -51,11 +51,11 @@ Development environment dependencies:
 
 1) Start Visual Studio Code in administrator mode
 
-![Administrator](https://rhildred.github.io/wordpress-heroku/READMEImages/vscodeAdministrator.PNG "Administrator")
+![Administrator](https://rhildred.github.io/wordpress-cloud/READMEImages/vscodeAdministrator.PNG "Administrator")
 
 2) Needed to add this to settings for vscode.
 
-![Settings](https://rhildred.github.io/wordpress-heroku/READMEImages/VsCodeSettings.PNG "Settings")
+![Settings](https://rhildred.github.io/wordpress-cloud/READMEImages/VsCodeSettings.PNG "Settings")
 ```
 
 {
@@ -67,7 +67,7 @@ Development environment dependencies:
 ```
 3) This to bottom of profile
 
-![](https://rhildred.github.io/wordpress-heroku/READMEImages/profile.PNG)
+![](https://rhildred.github.io/wordpress-cloud/READMEImages/profile.PNG)
 
 ```
 
@@ -78,25 +78,25 @@ export PATH
 
 4) Open php.ini.develoment
 
-![Unzip to]( https://rhildred.github.io/wordpress-heroku/READMEImages/clickbeside.PNG "Unzip to")
+![Unzip to]( https://rhildred.github.io/wordpress-cloud/READMEImages/clickbeside.PNG "Unzip to")
 
 5) Save as php.ini (On windows 10 you will get an error if you didn't open vscode as administrator)
 
 6) Make the following changes
 
-![extension_dir]( https://rhildred.github.io/wordpress-heroku/READMEImages/extension_dir.PNG "extension_dir")
+![extension_dir]( https://rhildred.github.io/wordpress-cloud/READMEImages/extension_dir.PNG "extension_dir")
 
-![extensions]( https://rhildred.github.io/wordpress-heroku/READMEImages/extensions.PNG "Extensions")
+![extensions]( https://rhildred.github.io/wordpress-cloud/READMEImages/extensions.PNG "Extensions")
 
-![timeout]( https://rhildred.github.io/wordpress-heroku/READMEImages/timeout.PNG "timeout")
+![timeout]( https://rhildred.github.io/wordpress-cloud/READMEImages/timeout.PNG "timeout")
 
 If everything works you should be able to do 
 
-![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
+![ctrl backtick]( https://rhildred.github.io/wordpress-cloud/READMEImages/keypress.PNG "ctrl backtick")
 
 With the resulting bash shell you should type in `php --version` and see the following results.
 
-![php version]( https://rhildred.github.io/wordpress-heroku/READMEImages/phpversion.PNG "php version")
+![php version]( https://rhildred.github.io/wordpress-cloud/READMEImages/phpversion.PNG "php version")
 
 ### Mac OSX
 
@@ -110,7 +110,7 @@ Download both of these and install accepting the default prompts.
 
 1) Once you have VsCode installed use the following technique to enter a shell in vscode:
 
-![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
+![ctrl backtick]( https://rhildred.github.io/wordpress-cloud/READMEImages/keypress.PNG "ctrl backtick")
 
 2) Install php using the curl command:
 
@@ -120,25 +120,25 @@ curl -s https://php-osx.liip.ch/install.sh | bash -s 7.0
 
 With the resulting bash shell you should type in `php --version` and see the following results.
 
-![php version]( https://rhildred.github.io/wordpress-heroku/READMEImages/phpversion.PNG "php version")
+![php version]( https://rhildred.github.io/wordpress-cloud/READMEImages/phpversion.PNG "php version")
 
 ## Local Installation
 
 Note: This repository is set up to deploy in a local environment using sqlite.
 
-If you just want to use wordpress-heroku in your own development environment for experimenting/learning with Wordpress custom themes and plugins. You can download a zip of this repository.
+If you just want to use wordpress-cloud in your own development environment for experimenting/learning with Wordpress custom themes and plugins. You can download a zip of this repository.
 
-![download zip]( https://rhildred.github.io/wordpress-heroku/READMEImages/downloadzip.PNG "Download Zip")
+![download zip]( https://rhildred.github.io/wordpress-cloud/READMEImages/downloadzip.PNG "Download Zip")
 
 To run Wordpress:
 
-1) Open the unzipped folder (you should rename it to something more meaningful than wordpress-heroku-master)
+1) Open the unzipped folder (you should rename it to something more meaningful than wordpress-cloud-master)
 
-![open folder]( https://rhildred.github.io/wordpress-heroku/READMEImages/openfolder.PNG "open folder")
+![open folder]( https://rhildred.github.io/wordpress-cloud/READMEImages/openfolder.PNG "open folder")
 
 2) Use the keypress technique to start a bash shell
 
-![ctrl backtick]( https://rhildred.github.io/wordpress-heroku/READMEImages/keypress.PNG "ctrl backtick")
+![ctrl backtick]( https://rhildred.github.io/wordpress-cloud/READMEImages/keypress.PNG "ctrl backtick")
 
 3) Type `npm install` followed by `npm start` in the shell. You will need to have node installed for this to work.
 
@@ -148,21 +148,21 @@ To run Wordpress:
 
 5) go to [http://localhost:8000](http://localhost:8000) in a new browser tab.
 
-![language selection]( https://rhildred.github.io/wordpress-heroku/READMEImages/language.PNG "language selection")
+![language selection]( https://rhildred.github.io/wordpress-cloud/READMEImages/language.PNG "language selection")
 
 5) enter a username and lab password on the next screen
 
-![Lab password]( https://rhildred.github.io/wordpress-heroku/READMEImages/LabPassword.PNG "lab password")
+![Lab password]( https://rhildred.github.io/wordpress-cloud/READMEImages/LabPassword.PNG "lab password")
 
 When you are really done you should be able to log in with your username and password from the previous step and see this:
 
-![True success]( https://rhildred.github.io/wordpress-heroku/READMEImages/TrueSuccess.PNG "lab True success")
+![True success]( https://rhildred.github.io/wordpress-cloud/READMEImages/TrueSuccess.PNG "lab True success")
 
 ## Heroku Installation
 
 Note: This repository is set up to deploy in a local environment using sqlite. The WP4.1.1 version only works with php 7.0.x.
 
-1. Fork [the repository](https://github.com/rhildred/wordpress-heroku) to your own github
+1. Fork [the repository](https://github.com/rhildred/wordpress-cloud) to your own github
 2. Clone the repository and open the resulting folder in VsCode
 3. Run `git checkout WP4.1.1` if you are using postgresql on heroku
 1. Add any plugins and themes you need and test
