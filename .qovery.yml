@@ -7,7 +7,7 @@ application:
   - name: "content"
     size: "20"
     type: "ssd"
-    mount_point: "/app/wp-content"
+    mount_point: "/app/wp-content/uploads"
 databases:
 - type: "MYSQL"
   name: "ux221rhildred"
