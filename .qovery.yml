@@ -1,0 +1,20 @@
+---
+application:
+  name: "wordpress-cloud"
+  project: "ux221rhildred"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "content"
+    size: "20"
+    type: "ssd"
+    mount_point: "/app/wp-content"
+databases:
+- type: "MYSQL"
+  name: "ux221rhildred"
+  version: "8.0"
+routers:
+- name: "main-wordpress-cloud"
+  routes:
+  - application_name: "wordpress-cloud"
+    paths:
+    - "/*"
